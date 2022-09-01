@@ -12,6 +12,7 @@ import { AuthContext } from "./context/auth";
 import { DarkModeContext } from "./context/darkMode";
 import { FullScreenContext } from "./context/fullScreen";
 import Auth from "./pages/auth/auth";
+import Products from "./pages/products/products";
 import Reports from "./pages/reports/reports";
 function App() {
   const { darkMode } = useContext(DarkModeContext);
@@ -40,6 +41,12 @@ function App() {
                 <Routes>
                   <Route path="/" element={<Reports />} />
                   <Route path="*" element={<Reports/>} />
+                  <Route path="/products/:query" element={<Products />} />
+                  <Route path="/products/tag/:tag" element={<Products />} />
+                  <Route
+                    path="/products/:query/:cat_id"
+                    element={<Products />}
+                  />
                 </Routes>
               </Container>
             </Flex>
