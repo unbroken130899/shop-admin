@@ -2,6 +2,6 @@ import React from 'react'
 
 export default function News() {
   return (
-    <div>Nevjhbnml,khblkhws</div>
+    <div>Nevjhbnmlhjkhgj,khblkhws</div>
   )
 }
