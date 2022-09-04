@@ -2,6 +2,6 @@ import React from 'react'
 
 export default function News() {
   return (
-    <div>News pasage</div>
+    <div>News pasge</div>
   )
 }
